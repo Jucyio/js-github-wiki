@@ -1,0 +1,27 @@
+{
+    "name": "github-wiki",
+    "description": "A library to handle Github wikis",
+    "main": [
+	"js/githubwiki.js"
+    ],
+    "dependencies": {
+	"jquery": "~1.10.2",
+	"marked": "https://github.com/Engil/marked.git"
+    },
+    "devDependencies": {},
+    "moduleType": ["globals"],
+    "keywords": [
+	"github",
+	"wiki",
+	"markdown"
+    ],
+    "authors": [
+	"Enguerrand Decorne <decorne.en@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+	"**/.*",
+	"node_modules",
+	"bower_components"
+    ]
+}
