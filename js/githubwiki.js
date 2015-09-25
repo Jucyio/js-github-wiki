@@ -32,5 +32,9 @@ var githubwiki = (function() {
 	module.wikiurl = url;
     };
 
+    module.setMarkedOptions = function(options) {
+	marked.setOptions(options);
+    };
+
     return module;
 }());
