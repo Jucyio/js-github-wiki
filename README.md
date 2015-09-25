@@ -50,7 +50,7 @@ githubwiki.setMarkedOptions({
         internalLinkTitle: linkRendererTitle
 });
 ```
-(You can check the marked documentation available here: https://github.com/Engil/marked (internalLink and internalLinkTitle are options excusive to a custom fork we used in order to parse internal wiki links)
+(You can check the marked documentation available here: https://github.com/Jucyio/marked (internalLink and internalLinkTitle are options excusive to a custom fork we used in order to parse internal wiki links)
 
 ## Methods documentation
 
