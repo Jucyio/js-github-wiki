@@ -5,7 +5,7 @@
 ## Install
 
 ``` bash
-bower install githubwiki
+bower install js-github-wiki
 ```
 
 ## Usage
