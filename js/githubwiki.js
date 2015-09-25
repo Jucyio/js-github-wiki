@@ -12,7 +12,7 @@ var githubwiki = (function() {
 	return '<a href="' + module.wikiurl + gh_name + '">' + link + '</a>';
     };
 
-    function linkRendererTitle(link, title) {
+    function linkRendererTitle(title, link) {
 	gh_name = githubname(link);
 	return '<a href="' + module.wikiurl + gh_name + '">' + title + '</a>';
     };
