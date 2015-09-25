@@ -4,16 +4,16 @@ var githubwiki = (function() {
     module.wikiurl = '';
 
     function githubname(name) {
-	return name.replace(/ /g, '-').replace(/\?/g, '%3F') + '.md';
+	return name.replace(/ /g, '-').replace(/\?/g, '%3F');
     };
 
     function linkRenderer(link) {
-	gh_name = githubname(link);
+	gh_name = githubname(link) + '.md';
 	return '<a href="' + module.wikiurl + gh_name + '">' + link + '</a>';
     };
 
     function linkRendererTitle(title, link) {
-	gh_name = githubname(link);
+	gh_name = githubname(link) + '.md';
 	return '<a href="' + module.wikiurl + gh_name + '">' + title + '</a>';
     };
 
@@ -40,6 +40,8 @@ var githubwiki = (function() {
     module.setMarkedOptions = function(options) {
 	marked.setOptions(options);
     };
+
+    module.getGithubName = githubname;
 
     return module;
 }());
