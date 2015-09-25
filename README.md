@@ -38,13 +38,11 @@ You can also set custom renderer for the internal wiki links (the *[[link]]* or 
 
 ```js
 function linkRenderer(link) {
-gh_name = githubname(link) + '.md';
-return '<a href="' + module.wikiurl + gh_name + '">' + link + '</a>';
+        return 'Hey here is a link: ' + link;
 };
 
 function linkRendererTitle(title, link) {
-        gh_name = githubname(link) + '.md';
-        return '<a href="' + module.wikiurl + gh_name + '">' + title + '</a>';
+        return 'Hey here is a link: ' + link + ' with a title: ' + title;
 };
 
 githubwiki.setMarkedOptions({
