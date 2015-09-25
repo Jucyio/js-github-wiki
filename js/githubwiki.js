@@ -32,6 +32,11 @@ var githubwiki = (function() {
 	module.wikiurl = url;
     };
 
+    module.setWiki = function(username, project) {
+	base_url = 'https://raw.githubusercontent.com/wiki/';
+	module.wikiurl = base_url + username + '/' + project + '/';
+    };
+
     module.setMarkedOptions = function(options) {
 	marked.setOptions(options);
     };
