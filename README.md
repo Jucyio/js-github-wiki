@@ -27,7 +27,7 @@ Minimal usage:
     <script>
       githubwiki.setWiki('SchoolIdolTomodachi', 'frgl');
       githubwiki.get("Home.md", function(text) {
-        document.getElementById('test').innerHTML = text;
+        document.getElementById('content').innerHTML = text;
       });
      </script>
   </body>
