@@ -22,10 +22,10 @@ var githubwiki = (function() {
 	internalLinkTitle: linkRendererTitle
     });
 
-    module.get = function(page) {
+    module.get = function(page, callback) {
 	$.get(module.wikiurl + page, function(data) {
-		document.getElementById('test').innerHTML = marked(data);
-	    });
+	    callback(marked(data));
+	});
     };
 
     module.setURL = function(url) {
