@@ -6,7 +6,7 @@
     ],
     "dependencies": {
 	"jquery": "~1.10.2",
-	"marked": "https://github.com/Jucyio/marked.git"
+	"marked": "https://github.com/Jucyio/marked.git#wiki"
     },
     "devDependencies": {},
     "moduleType": ["globals"],
